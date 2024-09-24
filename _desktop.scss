@@ -14,12 +14,11 @@ body {
 }
 
 .header {
-    position: relative;
     height: 800px;
-    background-image: url(img/header_bg.jpg);
+    background-color: #E1FF8F;
+    background-image: url(img/header_star.png), url(img/Star_2.png), url(img/Star_3.png), url(img/Star_4.png), url(img/Star_5.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top right, 4.5% 12.5%, 11% 9%, 75% 79%, 68% 71%;
 
     &__title {
         font-weight: 700;
@@ -39,6 +38,10 @@ body {
         &_big {
             font-weight: 600;
         }
+    }
+
+    &__mob {
+        display: none;
     }
 
     &__but {
@@ -62,46 +65,15 @@ body {
             color: #202027;
         }
     }
-
-    &__stars {
-        width: 1440px;
-
-        &_big {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        &_star2 {
-            position: absolute;
-            top: 94px;
-            left: 63px;
-        }
-
-        &_star3 {
-            position: absolute;
-            top: 69px;
-            left: 156px;
-        }
-
-        &_star4 {
-            position: absolute;
-            top: 568px;
-            right: 344px;
-        }
-
-        &_star5 {
-            position: absolute;
-            top: 538px;
-            right: 455px;
-        }
-    }
 }
 
 .box {
     position: relative;
     background-color: #202027;
-    padding-bottom: 96px;
+    padding-bottom: 90px;
+    background-image: url(img/Star_1.png), url(img/Star_11.png), url(img/Star_12.png);
+    background-repeat: no-repeat;
+    background-position: 100% 11%, 2% 52%, 3% 56%;
 
     &__title {
         font-weight: 700;
@@ -168,27 +140,104 @@ body {
             padding-bottom: 36px;
         }
     }
+}
 
-    &__stars {
-        width: 1440px;
+.holder {
+    position: relative;
+    background-color: #202027;
+    padding-bottom: 114px;
+    background-image: url(img/Star_6.png), url(img/Star_7.png), url(img/Star_8.png), url(img/Star_10.png);
+    background-repeat: no-repeat;
+    background-position: 97% 2.5%, 91% 1.5%, 96% 98%, 89% 98.5%;
 
-        &_star1 {
-            position: absolute;
-            top: 77px;
-            right: 0;
-            z-index: 0;
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        padding-bottom: 72px;
+    }
+
+    &__content {
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        width: 1200px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &_back {
+            background-color: #FFFFFF;
+            border-radius: 30px;
+            width: 1200px;
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: row;
         }
 
-        &_star11 {
-            position: absolute;
-            top: 770px;
-            left: 25px;
+        &_img {
+            width: 600px;
+            height: 500;
         }
 
-        &_star12 {
-            position: absolute;
-            top: 822px;
-            left: 40px;
+
+        &_name {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            color: #202027;
+            padding-top: 48px;
+            padding-left: 48px;
+            width: 400px;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            color: #202027;
+            padding-top: 24px;
+            padding-left: 48px;
+            padding-right: 48px;
+            padding-bottom: 36px;
         }
     }
+
+    &__button {
+        background: #202027;
+        box-sizing: border-box;
+        border-radius: 60px;
+        width: 247px;
+        height: 66px;
+        margin-left: 48px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        font-family: "Montserrat";
+
+        &:hover {
+            background: #FFFFFF;
+            color: #202027;
+        }
+    }
+
+}
+
+
+
+
+.footer {
+    height: 150px;
+    background-color: #BDED35;
+
+    &__text {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        text-align: center;
+        padding-top: 61px;
+    }
+
 }
